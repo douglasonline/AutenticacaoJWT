@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": ["ES5", "ES6", "ES2018"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": ["./src/@types"],
+    "rootDir": "./",
+    "outDir": "./public/views/pagina_principal",
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "ts-node": {
+    "files": true
+  }
+}
