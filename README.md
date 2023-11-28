@@ -71,7 +71,7 @@ Estou utilizando o Postman para consumir a aplicação
 
 ![Cadastrar Filmes](https://github.com/douglasonline/Imagens/blob/master/Cadastrar_Filmes.png)
 
-- Quinto para atualizar um filme ou categoria se deve passar o id juntamente com o Token e os dados que deseja atualizar deve-se mudar a URL, category: categoria, filmes: films 
+- Quinto para atualizar um filme ou categoria se deve passar o id juntamente com o Token e os dados que deseja atualizar deve-se mudar a URL para category: categoria ou filmes: films 
 
 ![Atualizar](https://github.com/douglasonline/Imagens/blob/master/Atualizar.png)
 
@@ -79,7 +79,7 @@ Estou utilizando o Postman para consumir a aplicação
 
 ![Deletar](https://github.com/douglasonline/Imagens/blob/master/Deletar.png)
 
-- Setimo para listar todos os dados deve-se passar na URL category: categoria, filmes: films juntamente com o Token
+- Setimo para listar todos os dados deve-se passar na URL category: categoria ou filmes: films juntamente com o Token
 
 ![Listar](https://github.com/douglasonline/Imagens/blob/master/Listar.png)
 
