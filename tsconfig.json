@@ -14,12 +14,11 @@
     "noImplicitAny": true,
     "strictPropertyInitialization": false,
     "typeRoots": ["./src/@types"],
-    "rootDir": "./",
-    "outDir": "./public/views/pagina_principal",
+    "outDir": "./dist",
     "sourceMap": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
   "ts-node": {
     "files": true
   }

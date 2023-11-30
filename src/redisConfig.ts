@@ -1,11 +1,8 @@
 import Redis from "ioredis";
 import { promisify } from "util";
 
-const redisClient = new Redis({
-    port: 6379,
-    host: "localhost",
-    connectTimeout: 10000
- });
+console.log('Redis URL:', process.env.REDIS_URL);
+const redisClient = new Redis(process.env.REDIS_URL || 'redis://localhost:6379');
 
 function getRedis(value: string){
 

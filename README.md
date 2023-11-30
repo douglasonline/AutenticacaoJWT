@@ -17,13 +17,14 @@
 - TypeORM
 - Redis
 - PostgreSQL
+- Docker 
 
 ## Front end
 - EJS
 - HTML 
 - CSS
 ## Implantação em produção
-- Back end: Heroku
+- Back end: Back4app
 - Banco de dados: Postgresql
 
 # Como executar o projeto
