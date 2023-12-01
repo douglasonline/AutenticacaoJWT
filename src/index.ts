@@ -22,7 +22,7 @@ AppDataSource.initialize()
 
         app.use(errorMiddleware)
 
-        return app.listen(process.env.PORT)
+        return app.listen(process.env.PORT || 3000)
 
     })
     .catch((error) => {

@@ -16,8 +16,12 @@ COPY . .
 # Compilar TypeScript para JavaScript
 RUN npm run build
 
-# Exponha a porta em que seu aplicativo será executado
-EXPOSE 3000
+# Utilize uma variável de ambiente para definir a porta.
+# O valor default será 3000, mas isso pode ser alterado
+# ao rodar o contêiner com a flag -e, por exemplo: docker run -e PORT=4000
+ENV PORT=3000
+EXPOSE $PORT
 
 # Comando para executar seu aplicativo usando o código JavaScript compilado
+# O comando agora utiliza a variável de ambiente para definir a porta
 CMD ["node", "dist/index.js"]
