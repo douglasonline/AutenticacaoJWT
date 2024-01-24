@@ -36,6 +36,8 @@ Pré-requisitos: Node.js, Redis, PostgreSQL
 
 # Entrar na pasta do projeto back end
 
+# O Banco de Dados e as tabelas são criados automaticamente
+
 # Executar o comando npm install para instalar as dependências
 
 # Executar o comando npm start para iniciar a aplicação
@@ -49,6 +51,8 @@ Pré-requisitos: Docker
 # Clonar repositório
 
 # Entrar na pasta do projeto back end
+
+# O Banco de Dados e as tabelas são criados automaticamente
 
 # Executar o comando docker-compose up para iniciar a aplicação
 
