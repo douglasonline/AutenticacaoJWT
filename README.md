@@ -10,6 +10,8 @@
 
 ![Web 2](https://github.com/douglasonline/Imagens/blob/master/app_layout_web2.png)
 
+![Web 3](https://github.com/douglasonline/Imagens/blob/master/app_layout_web3.png)
+
 # Tecnologias utilizadas
 ## Back end
 - Node.js
@@ -23,9 +25,6 @@
 - EJS
 - HTML 
 - CSS
-## Implantação em produção
-- Back end: Back4app
-- Banco de dados: Postgresql
 
 # Como executar o projeto
 
@@ -35,20 +34,34 @@ Pré-requisitos: Node.js, Redis, PostgreSQL
 ```bash
 # Clonar repositório
 
-# Criar o banco api_autenticacao_jwt no postgres
-
 # Entrar na pasta do projeto back end
 
 # Executar o comando npm install para instalar as dependências
 
-# Executar o comando npm run migration:generate para criar as migration para gerar as tabelas
+# Executar o comando npm start para iniciar a aplicação
 
-# Executar o comando npm rum migration:run para gerar as tabelas no Postgresql
-
-# executar o projeto npm run dev para executar o projeto
 ```
 
-## Como consumir o projeto
+## Back end Docker
+Pré-requisitos: Docker
+
+```bash
+# Clonar repositório
+
+# Entrar na pasta do projeto back end
+
+# Executar o comando docker-compose up para iniciar a aplicação
+
+```
+
+# Como acessar o pgadmin4 do Docker
+
+- Após a aplicação ser executada no Docker acesse o pgadmin4 no endereço: http://localhost:5050/
+
+![Pgadmin4 Docker](https://github.com/douglasonline/Imagens/blob/master/Pgadmin4_Docker.png)
+ 
+
+# Como consumir o projeto
 
 Estou utilizando o Postman para consumir a aplicação
 

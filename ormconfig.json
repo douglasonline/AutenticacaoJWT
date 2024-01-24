@@ -3,7 +3,7 @@
   "host": "postgres",
   "port": 5432,
   "username": "postgres",
-  "password": "postgres",
+  "password": "1234",
   "database": "postgres",
   "entities": ["src/entities/*.ts"],
   "migrations": ["src/migrations/*.ts"],

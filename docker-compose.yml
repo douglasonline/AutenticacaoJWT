@@ -11,7 +11,7 @@ services:
       - DATABASE_HOST=postgres
       - DATABASE_PORT=5432
       - DATABASE_USER=postgres
-      - DATABASE_PASSWORD=postgres
+      - DATABASE_PASSWORD=1234
       - DATABASE_NAME=postgres
       - REDIS_URL=redis://redis:6379
     depends_on:
@@ -26,7 +26,7 @@ services:
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: 1234  # Certifique-se de que esta senha está correta
     ports:
       - "5432:5432"
 
@@ -49,11 +49,12 @@ services:
 
   migration-generator:
     image: node:latest
+    container_name: migration-generator
     volumes:
       - .:/app
     working_dir: /app
     command: >
-      sh -c "cd /app && npm install -g typescript && npm run migration:generate && tsc src/toAlterMigrations.ts && sleep 30 && node src/toAlterMigrations.js && npm run migration:run"
+      sh -c "cd /app && npm install -g typescript && tsc src/removeMigrations.ts && node src/removeMigrations.js && npm run migration:generate && tsc src/toAlterMigrations.ts && sleep 5 && node src/toAlterMigrations.js && npm run migration:run"
     environment:
       - DATABASE_HOST=postgres
       # Outras variáveis de ambiente necessárias para suas migrações
